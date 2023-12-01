@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Example Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <div class="header">
+            <img src="https://github.com/jaywahlers.png" class="profile-pic" alt="Profile picture"/>
+            <h1>Jakob Wahlers</h1>
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <button class="button" ><a class="navLink" href="index.html">Home</a></button>
+          <button class="button" ><a class="navLink" href="experience.html">Experience</a></button>
+          <button class="button" ><a class="navLink" href="education.html">Education</a></button>
+          <button class="button" ><a class="navLink" href="portfolio.html">Portfolio</a></button>
+          <button class="button" ><a class="navLink" href="personal.html">Personal</a></button>
+          <button class="button" ><a class="navLink" href="contact.html">Contact</a></button>
+      </nav>
+    </header>
+
+    <hr>
+    <section id="personal">
+        <h2>Personal</h2>
+        
+        <div id="twitch">
+            <h3>Come hangout with me on Twitch</h3>
+
+            <p>In my free time I like to hangout and play video games</p>
+            <!-- https://dev.twitch.tv/docs/embed/video-and-clips/ -->
+            <div class="embedStream">
+                <iframe
+                  title="Jakob's Twitch"
+                  src="https://player.twitch.tv/?channel=HotAsHochi&parent=localhost&autoplay=true&muted=true"
+                  frameBorder="0"
+                  scrolling="no"
+                  height="360"
+                  width="640"
+                ></iframe>
+            </div>
+        </div>
+
+        <h3>I also love traveling to different countries</h3> 
+        <div class="embedStream">
+           <img src="assets/germanypic.png" alt="family and I in Germany" width="auto" height="350px">
+        </div>
+
+        <h3>And spending time with my friends and family is a must</h3> 
+        <div class="embedStream">
+           <img src="assets/golfpic.png" alt="golfing with family" width="auto" height="350px">
+        </div>
+        
+    </section>
+  </body>
+</html>
