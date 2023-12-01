@@ -181,6 +181,8 @@ img{
 
 .flip-card-back:visited{
     text-decoration: none;
+    text-decoration: none;
+    color: '#000';
 }
 
 .flip-card:hover .flip-card-inner { 
