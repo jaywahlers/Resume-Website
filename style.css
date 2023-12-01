@@ -26,7 +26,6 @@ body, section{
 }
 
 .jobEmployer {
-    
     padding-left:4rem;
 }
 
@@ -51,7 +50,7 @@ body, section{
     font-weight: 500;
     text-transform: uppercase;
     color: #fff;
-    background-color: #1976d2;
+    background-image: linear-gradient(45deg, #6f04d9,#d9048e);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
 }
@@ -59,19 +58,19 @@ body, section{
 .navLink, .navLink:visited  {
     text-decoration: none;
     color: #fff;
-    background-color: #1976d2;
+    background-color: linear-gradient(45deg, #6f04d9,#d9048e);
 }
 
 button:hover {
-    background-color: #1565c0;
+    background-color: linear-gradient(45deg, #6f04d9,#d9048e);
 }
 
 .universityLogo {
     display: flex;
+    justify-content: start;
     flex-direction: row;
     gap: 1rem;
     align-items: center;
-    justify-content: start;
 }
 
 /* Active/focus effect */
@@ -83,14 +82,19 @@ box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.3);
 
 .emailLink {
     text-decoration: none;
-    color: #1976d2;
+    color: linear-gradient(45deg, #6f04d9,#d9048e);
     font-weight: 500;
     transition: color 0.3s ease;
+    font-size: larger;
+}
+
+.emailLink:visited{
+    color: #d9048e;
 }
 
 /* Hover effect */
 .emailLink:hover {
-    color: #1565c0;
+    color: #6f04d9;
 }
 
 /* Active/focus effect */
@@ -127,12 +131,19 @@ hr {
     padding-top: 5px;
 }
 
-header{
+.header{
     display: flex;
     justify-content: start;
     flex-direction: row;
     gap: 1rem;
     align-items: center;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 1rem;
 }
 
 img{
@@ -216,4 +227,18 @@ img{
 
 .flip-card-back h1 {
     margin: 0;
+}
+
+.education{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 1rem;
+}
+
+.university{
+    padding-left: 2rem;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
 }
