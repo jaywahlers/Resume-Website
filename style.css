@@ -198,6 +198,10 @@ img{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
 }
 .flip-card-front { 
     background-image: linear-gradient(45deg, #6f04d9,#d9048e);
@@ -205,7 +209,6 @@ img{
 
 .flip-card-front img {
     width: 220px;
-    margin-top: 1rem;
 }
 
 .flip-card-front a:visited, .flip-card-back a:visited{
@@ -221,7 +224,6 @@ img{
 
 .flip-card-back img { 
     width: 140px;
-    margin-top: 1rem;
 }
 
 .flip-card-back h3 {
@@ -230,6 +232,26 @@ img{
 
 .flip-card-back h1 {
     margin: 0;
+}
+
+@media (max-width: 1140px) {
+    .flip-card {
+        width: 100%;
+    }
+    .flip-card-inner {
+        height: 100%;
+    }
+    .flip-card-front,
+    .flip-card-back {
+        border-radius: 16px;
+        height: 50%;
+    }
+    .flip-card-front img {
+        width: 100%;
+    }
+    .flip-card-back img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -250,28 +272,26 @@ img{
     }
     .flip-card {
       width: 100%;
-      margin-bottom: 20px;
     }
   
     .flip-card-inner {
       height: 100%;
     }
-  
+
     .flip-card-front,
     .flip-card-back {
-      border-radius: 0; /* Remove border-radius on small screens */
+      border-radius: 10; /* Remove border-radius on small screens */
     }
   
     .flip-card-front img {
-      width: 100%; /* Make the image fill the width of the card */
+      width: 100%;
       margin-top: 1rem;
     }
   
     .flip-card-back img {
-      width: 100%; /* Make the image fill the width of the card */
-      margin-top: 1rem;
+      display: none;
     }
-  }
+}
 
 .education{
     display: flex;
