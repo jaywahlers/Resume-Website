@@ -17,6 +17,14 @@ body, section{
 .navbar {
     width: 100%;
     display: flex;
+    gap: 4px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.home-nav-bar {
+    width: 100%;
+    display: flex;
     gap: 5px;
     flex-direction: row;
     justify-content: space-between;
